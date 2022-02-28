@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2:wght@800&family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/index.css">
   <title>Responsive-projekt</title>
 </head>
@@ -22,8 +22,16 @@
   <main>
     <section class="main__section">
       <h1 class="title">Patagonia</h1>
-      <p class="text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.<br>Donec viverra eleifend lacus, vitae ullamcor.</p>
-      <img src="/images/image-desktop.jpg" alt="image with horses" class="main__image">
+      <p class="text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+        Donec viverra eleifend lacus, vitae ullamcor.</p>
+      <div class="main__image">
+        <picture>
+          <source media="(max-width: 700px)" srcset="/images/image-mobile.jpg">
+          <source media="(max-width: 1000px)" srcset="/images/image.jpg">
+          <source media="(min-width: 1000px)" srcset="/images/image-desktop.jpg">
+          <img src="/images/image-desktop.jpg" alt="image with horses">
+        </picture>
+      </div>
     </section>
   </main>
 </body>
