@@ -36,6 +36,10 @@ body {
   color: #242635;
 }
 
+.link:hover{
+  opacity:0.5;
+}
+
 a {
   text-decoration: none;
 }
@@ -157,6 +161,10 @@ a {
     line-height: 36px;
     letter-spacing: -0.25px;
     list-style-type: none;
+  }
+
+  .mobile__link:hover {
+    opacity:0.5;
   }
 
   .title {
